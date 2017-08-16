@@ -1,18 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mosquefinder.arnal.prayerapp.MainActivity">
+    android:scaleType="centerCrop"
+    android:orientation="vertical"
+    tools:context="com.mosquefinder.arnal.prayertimesapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp" >
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/location_city"
+            style="@style/locationStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bishkek"
+            android:maxLines="1" />
+
+
+        <ImageButton
+            android:id="@+id/place_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/miladi_time"
+            style="@style/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="16 August 2017"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/hijri_time"
+            style="@style/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="24 Dhul Qadah 1438"
+            android:gravity="right"
+            android:paddingRight="5dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/remain_to"
+            style="@style/remain_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLines="1"
+            android:text="@string/time_left" />
+
+        <TextView
+            android:id="@+id/next_prayer_name"
+            style="@style/remain_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="====" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp" >
+
+        <TextView
+            android:id="@+id/missing_time"
+            style="@style/remain_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="::::" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="36sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <include layout="@layout/prayer_times" />
+    </ScrollView>
+</LinearLayout>

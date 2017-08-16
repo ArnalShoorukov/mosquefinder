@@ -1,3 +1,91 @@
 <resources>
     <string name="app_name">PrayerApp</string>
+
+    <string name="time_left">Remaining Time to</string>
+
+    <!-- prayer names -->
+    <string name="fajr">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="zuhr">Zuhr</string>
+    <string name="asr">Asr</string>
+    <string name="magreeb">Magreeb</string>
+    <string name="isha">Isha</string>
+    <!--Prayer Times sample-->
+    <string name="fajr_time">03:16</string>
+    <string name="sunrise_time">05:30</string>
+    <string name="zuhr_time">13:06</string>
+    <string name="asr_time">17:06</string>
+    <string name="magreeb_time">20:42</string>
+    <string name="isha_time">22:46</string>
+
+    <string name="need_location_permission_message">Needs location permission</string>
+    <!-- Label for the location preference -->
+    <string name="pref_location_label">Location</string>
+
+
+    <!-- Key name for storing location in SharedPreferences -->
+    <string name="pref_location_key" translatable="false">location</string>
+
+    <!-- Default postal code for location preference -->
+    <string name="pref_location_default" translatable="false">Bishkek, Kyrgyzstan</string>
+
+    <!-- Label for the calculation method preference -->
+    <string name="pref_method_label">Calculation Method</string>
+
+
+    <string name="pref_method_label_jafari">Ithna Ashari</string>
+    <string name="pref_method_label_karachi">University of Islamic Sciences, Karachi</string>
+    <string name="pref_method_label_isna">Islamic Society of North America (ISNA)</string>
+    <string name="pref_method_label_mwl">Muslim World League</string>
+    <string name="pref_method_label_qura">Umm al-Qura, Makkah</string>
+    <string name="pref_method_label_egypt">Egyptian General Authority of Survey</string>
+    <string name="pref_method_label_tehran">Institute of Geophysics, University of Tehran</string>
+
+    <!-- Key name for color preference in SharedPreferences -->
+    <string name="pref_method_key" translatable="false">method</string>
+    <string name="pref_method_jafari_value" translatable="false">0</string>
+    <string name="pref_method_karachi_value" translatable="false">1</string>
+    <string name="pref_method_isna_value" translatable="false">2</string>
+    <string name="pref_method_mwl_value" translatable="false">3</string>
+    <string name="pref_method_qura_value" translatable="false">4</string>
+    <string name="pref_method_egypt_value" translatable="false">5</string>
+    <string name="pref_method_tehran_value" translatable="false">6</string>
+
+
+    <!-- Label for the time format preference -->
+    <string name="pref_time_label">Time Format</string>
+
+    <!-- Label for red color preference -->
+    <string name="pref_time_format_lebel_24">24-hour Format</string>
+    <!-- Label for blue color preference -->
+    <string name="pref_time_format_lebel_12">12-hour Format</string>
+
+
+    <!-- Key name for color preference in SharedPreferences -->
+    <string name="pref_time_key" translatable="false">time</string>
+
+    <!-- Value in SharedPreferences for red color option -->
+    <string name="pref_time_format_24_value" translatable="false">0</string>
+
+    <!-- Value in SharedPreferences for blue color option -->
+    <string name="pref_time_format_12_value" translatable="false">1</string>
+
+
+    <!-- Label for the juristic preference -->
+    <string name="pref_juristic_label">Juristic Method</string>
+
+    <!-- Label for red color preference -->
+    <string name="pref_juristic_lebel_shafii">Shafii (standard)</string>
+    <!-- Label for blue color preference -->
+    <string name="pref_juristic_lebel_hanafi">Hanafi</string>
+
+
+    <!-- Key name for color preference in SharedPreferences -->
+    <string name="pref_juristic_key" translatable="false">juristic</string>
+
+    <!-- Value in SharedPreferences for red color option -->
+    <string name="pref_juristic_shafii_value" translatable="false">0</string>
+
+    <!-- Value in SharedPreferences for blue color option -->
+    <string name="pref_juristic_hanafi_value" translatable="false">1</string>
 </resources>
