@@ -94,4 +94,47 @@
 
 
     <string name="action_settings">Settings</string>
+
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+
+    <string name="SUNDAY">Sunday</string>
+    <string name="MONDAY">Monday</string>
+    <string name="TUESDAY">Tuesday</string>
+    <string name="WEDNESDAY">Wednesday</string>
+    <string name="THURSDAY">Thursday</string>
+    <string name="FRIDAY">Friday</string>
+    <string name="SATURDAY">Saturday</string>
+
+    <string name="al_ahad">Al Ahad</string>
+    <string name="al_ithnin">Al Ithnin</string>
+    <string name="attolathaa">Attolathaa</string>
+    <string name="al_arbiaa">Al Arbiaa</string>
+    <string name="al_khamis">Al Khamis</string>
+    <string name="al_jomoa">Al Jomoa</string>
+    <string name="assabt">Assabt</string>
+
+    <string name="muharram">Muharram</string>
+    <string name="safar">Safar</string>
+    <string name="rabi_ul_awwal">Rabiul Awwal</string>
+    <string name="rabi_ul_attani">Rabiul Attani</string>
+    <string name="jumadal_ula">Jumadal Ula</string>
+    <string name="jumadal_attani">Jumadal Attani</string>
+    <string name="rajab">Rajab</string>
+    <string name="shaban">Shaaban</string>
+    <string name="ramadan">Ramadan</string>
+    <string name="shawwal">Shawwal</string>
+    <string name="dhul_qi_ada">Dhul Qiada</string>
+    <string name="dhul_hijja">Dhul Hijja</string>
+
 </resources>
